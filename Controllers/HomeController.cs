@@ -34,7 +34,6 @@ namespace FizzBuzz.Controllers
             //Input numbers
             int firstNum = input.FirstNum;
             int secondNum = input.SecondNum;
-            var test = input.IsMultiple;
 
             for (int loop = firstNum; loop <= secondNum; loop++)
             {
@@ -43,17 +42,14 @@ namespace FizzBuzz.Controllers
                 
                 if(fizz == 0 && buzz == 0)
                 {
-                    input.IsMultiple = true;
                     input.Message += " FizzBuzz";
                 }
                 else if(fizz == 0)
                 {
-                    input.IsMultiple = true;
                     input.Message += " Fizz";
                 }
                 else if(buzz == 0)
                 {
-                    input.IsMultiple = true;
                     input.Message += " Buzz";
                 }
                 else

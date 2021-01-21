@@ -16,9 +16,6 @@ namespace FizzBuzz.Models
         public string Buzz { get; set; }
         public string FizzBuzz { get; set; }
 
-        //If not a multiple
-        public bool IsMultiple { get; set; }
-
         //output
         public string Message { get; set; }
 
