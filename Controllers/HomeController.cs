@@ -32,10 +32,10 @@ namespace FizzBuzz.Controllers
         public IActionResult Index(FizzandBuzz input)
         {
             //Input numbers
-            int firstNum = input.FirstNum;
-            int secondNum = input.SecondNum;
+            //int firstNum = input.FirstNum;
+            //int secondNum = input.SecondNum;
 
-            for (int loop = firstNum; loop <= secondNum; loop++)
+            for (int loop = input.FirstNum; loop <= input.SecondNum; loop++)
             {
                 int fizz = loop % 3;
                 int buzz = loop % 5;
